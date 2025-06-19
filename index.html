@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gestion simplifie des employes de Orange</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="title">Gestion des Employes de Orange</h1>
+    </div>
+    <div>
+        <h4 class="header_form">Ajouter Un nouveau employe</h4>
+        <form id="form">
+            <div class="row_employee">
+                <label for="nom">Nom :</label>
+                <input type="text" class="input" name="nom" id="nom" placeholder="Entrer votre nom ..." required>
+            </div>
+            <div class="row_employee">
+                <label for="prenom">Prenom :</label>
+                <input type="text" class="input" name="prenom" id="prenom"  placeholder="Entrer votre Prenom ..." required>
+            </div> 
+            <div class="row_employee">
+                <label for="email">Email :</label>
+                <input type="email" class="input" name="email" id="email" placeholder="Entrez votre Email ..." required>
+            </div>
+            <div class="row_employee">
+                <label for="fonction">Fonction :</label>
+                <input type="fonction" class="input" name="fonction" id="fonction" placeholder="Entrer votre fonction">
+            </div>
+
+            <div class="btn">
+                <button type="submit" id="ajouter" onclick="ajouterEmployee()">Ajouter</button>
+            </div>
+        </form>
+
+        <div class="status_employes">
+            <table>
+                <caption>
+                    Liste des Employees de Orange
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Fonction</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <th scope="row">Chris</th>
+                        <td>HTML tables</td>
+                        <td>22</td>
+                        <td>
+                            <button class="btn-delete" onclick="deleteEmployee()">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dennis</th>
+                        <td>Web accessibility</td>
+                        <td>45</td>
+                        <td>
+                            <button class="btn-delete" onclick="deleteEmployee()">Supprimer</button>
+                        </td>
+                    </tr>
+                    </tr>
+                -->
+                </tbody>
+                <!-- <tfoot>
+                    
+                </tfoot> -->
+            </table>
+        </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
