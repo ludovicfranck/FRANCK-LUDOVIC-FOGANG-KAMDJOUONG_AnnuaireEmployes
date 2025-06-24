@@ -69,7 +69,7 @@ function getParamsFromURL() {
 }
 
 // Ajout automatique dans localStorage si des paramètres existent dans l'URL
-function ajouterDepuisURL() {
+function ajouterDepuisURL() { 
     const { nom, prenom, email, fonction } = getParamsFromURL();
 
     // Vérifier que toutes les données sont présentes
