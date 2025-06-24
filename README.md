@@ -13,5 +13,5 @@ L'execution du projet se fait en double cliquant sur le fichier index.html
 
 ### FONCTIONNALITES DEVELOPPEES
 
-** Creation d'un employe 
-**Suppression d'un employe
+** Creation d'un employe \
+** Suppression d'un employe
